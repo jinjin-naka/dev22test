@@ -1,0 +1,33 @@
+body {background:lightskyblue;}
+/* Classをつけた場合は先頭に[.]をつける */
+/* tac がテキストアライン */
+.a {background:lightseagreen;text-align: center;}
+.b {color: green; font-style: italic;
+}
+/* c で色のショートカット。w・hは幅と高さのショートカット。丸みをつけるのはbdrs */
+img {width: 250px;height: 250px;border-radius: 20%;border: 5px solid green;
+box-shadow:10px 10px 10px grey;}
+/* 線を引くおまじない。Border：線の太さ、線の色、線の種類 */
+/* 影をつけるおまじない。Box-shadow */
+
+p.d {
+    position: relative;
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+  }
+  
+  p.d:after {
+    position: absolute;
+    content: '';
+    left: -7px;
+    top: -7px;
+    border-width: 0 0 15px 15px;
+    border-style: solid;
+    border-color: #fff #fff #a8d4ff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  p.c {text-align: center;}
